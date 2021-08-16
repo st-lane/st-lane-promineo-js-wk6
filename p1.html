@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FE Tech: Week 6 - CRUD: Books</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="./custom.css" type="text/css">
+    <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="i-want-a-server.js"></script>
+</head>
+
+<body>
+    <main class="container">
+    <div class="container row mt-2">
+        <div class="card">
+            <div class="card-body">
+                <h2>My Books:</h2>
+                <ol id='book-list'></ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <form name="dataForm">
+                    <div class="row mt-2">
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name">
+                                <input type="text" class="form-control" id="id" name="id">
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <label for="author">Author</label>
+                                    <input type="text" class="form-control" id="author" name="author">
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+
+                    <divv class="row mt-2">
+                        <div class="col-sm">
+                            <button id="btnAdd" type="button" class="btn btn-primary form-control">Create</button>
+                        </div>
+                        <div class="col-sm">
+                            <button id="btnUpdate" type="button" class="btn btn-primary form-control">Update</button>
+                        </div>
+                        <div class="col-sm">
+                            <button id="btnDelete" type="button" class="btn btn-primary form-control">Delete</button>
+                        </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+        </div>
+    </main>
+    <script type="text/javascript" src="./node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+</body>
+
+</html>
